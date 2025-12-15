@@ -1,0 +1,7 @@
+credit-default-ml/
+├── data/
+├── notebooks/
+├── src/
+├── reports/
+├── README.md
+└── requirements.txt
