@@ -17,13 +17,15 @@ Notebook: 01_eda.ipynb
 Goals:  
 * Understand dataset structure and features
 * Identify the target variable
-* Check for obvious data quality issues  
+* Check for obvious data quality issues
+* 
 Key Work:  
 * Loaded and inspected the dataset
 * Identified default.payment.next.month as the prediction target
 * Reviewed feature types and distributions
 * Removed non-informative ID column
-* Performed initial sanity checks on missing and unusual value   
+* Performed initial sanity checks on missing and unusual value
+* 
 Outcome:  
 A good understanding of the dataset and confirmation that the problem is a binary classification task.  
 
