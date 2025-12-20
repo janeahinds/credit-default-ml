@@ -34,11 +34,13 @@ Notebook: 01_eda.ipynb
 Goals:  
 * Understand class imbalance
 * Frame the modeling task in business terms
+  
 Key Work:  
 * Analyzed class distribution (~22% defaults)
 * Identified class imbalance and implications for evaluation
 * Determined that false negatives (missed defaults) are more costly than false positives
 * Selected recall, precision, F1, and ROC-AUC as primary evaluation metrics
+  
 Outcome:  
 Clear business framing that guides model evaluation and decision-making.  
 
@@ -47,16 +49,19 @@ Notebook: 02_baseline_logistic_regression.ipynb
 
 Goals:  
 * Establish a baseline
-* Create a fair benchmark for comparison
+* Create a fair benchmark for comparison  
+  
 Key Work:  
 * Performed stratified train/test split
 * Built a pipeline with feature scaling and logistic regression
 * Trained the baseline model
+  
 Evaluated using:  
 * Confusion matrix
 * Precision, recall, F1
 * ROC-AUC
 * Interpreted results with focus on minority (default) class
+  
 Outcome:  
 A reliable baseline model that highlights the challenge of catching defaulters in an imbalanced dataset.
 
@@ -65,6 +70,7 @@ Notebook: 03_random_forest_baseline.ipynb
 Goals:  
 * Test whether a non-linear model improves performance
 * Compare models using consistent metrics
+  
 Key Work:  
 * Trained a Random Forest model using the same train/test split
 * Evaluated performance using the same metrics as logistic regression
@@ -78,7 +84,8 @@ The Random Forest model showed stronger performance in identifying defaulters wh
 Notebook: 04_threshold_tuning.ipynb  
 Goals:  
 * Align model decisions with business cost
-* Move beyond the default 0.5 probability threshold  
+* Move beyond the default 0.5 probability threshold
+  
 Key Work:  
 * Evaluated multiple probability thresholds (0.3, 0.4, 0.5)
 * Measured precision and recall tradeoffs at each threshold
